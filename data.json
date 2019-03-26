@@ -1,0 +1,163 @@
+{
+    "statusIndicator": [
+        "Бот",
+        "Блюда",
+        "Реквизиты" 
+    ],
+    "steps": [
+        {
+            "step": "Шаг 1",
+            "description": "Выберите где создаём бота",
+            "smallText": "Messenger",
+            "messenger": [
+                "Viber",
+                "Telegram"
+            ]
+        },
+        {
+            "step": "Шаг 2",
+            "description": "Добавьте пару слов о Вашем боте",
+            "placeholder": "Привет! Я - бот, который предоставляет услуги от компании BIMBO",
+            "buttonName": "Сохранить"
+        },
+        {
+            "step": "Шаг 3",
+            "description": "Приветствуйте пользователя или предоставьте это нам",
+            "placeholder": "Давай знакомиться! Я новый сотрудник BIMBO_Bot, и я помогу тебе воспользоваться услугами компании BIMBO",
+            "buttonName": "Изменить"
+        }
+    ],
+    "categories": {
+        "pageTitle": "Выберите категории и блюда для продажи в боте",
+        "categoryTitle": "Категории",
+        "categoriesName": [
+            {
+                "categoryHead": "Выпечка",
+                "categoryItem": [
+                    {
+                        "itemName": "Круасcан",
+                        "itemWeight": "150 g",
+                        "itemImageURL": "http://субитокрасноярск.рф/wp-content/uploads/2015/12/kruassan-s-varenoy-sguschenkoy.png"
+                    },
+                    {
+                        "itemName": "Круасcан",
+                        "itemWeight": "150 g",
+                        "itemImageURL": "http://субитокрасноярск.рф/wp-content/uploads/2015/12/kruassan-s-varenoy-sguschenkoy.png"
+                    },
+                    {
+                        "itemName": "Круасcан",
+                        "itemWeight": "150 g",
+                        "itemImageURL": "http://субитокрасноярск.рф/wp-content/uploads/2015/12/kruassan-s-varenoy-sguschenkoy.png"
+                    },
+                    {
+                        "itemName": "Круасcан",
+                        "itemWeight": "150 g",
+                        "itemImageURL": "http://субитокрасноярск.рф/wp-content/uploads/2015/12/kruassan-s-varenoy-sguschenkoy.png"
+                    },
+                    {
+                        "itemName": "Круасcан",
+                        "itemWeight": "150 g",
+                        "itemImageURL": "http://субитокрасноярск.рф/wp-content/uploads/2015/12/kruassan-s-varenoy-sguschenkoy.png"
+                    }
+                ]
+            },
+            {
+                "categoryHead": "Кофе",
+                "categoryItem": [
+                    {
+                        "itemName": "Cappuccino",
+                        "itemWeight": "250ml",
+                        "itemImageURL": "http://kofeynik.net/image/data/%D0%9D%D0%BE%D0%B2%D0%BE%D1%81%D1%82%D0%B8/dry-cappuccino.jpg"
+                    },
+                    {
+                        "itemName": "Espresso",
+                        "itemWeight": "30ml",
+                        "itemImageURL": "http://www.greatcandle.com/thumbnail.asp?file=assets/images/espresso.jpg&maxx=300&maxy=0"
+                    },
+                    {
+                        "itemName": "Latte",
+                        "itemWeight": "300ml",
+                        "itemImageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIA3nLI_6D5vqd0sfrpf1EzbGbF37jk7MGsUkvspDY0w1rR0yH"
+                    },
+                    {
+                        "itemName": "Ristretto",
+                        "itemWeight": "20ml",
+                        "itemImageURL": "http://coffeemania.su/wp-content/uploads/2017/07/kofe-ristretto.jpg"
+                    },
+                    {
+                        "itemName": "Glace",
+                        "itemWeight": "300ml",
+                        "itemImageURL": "https://st3.depositphotos.com/1494134/12996/v/950/depositphotos_129963520-stock-illustration-coffee-with-icecream-glace-isolated.jpg"
+                    }
+                ]
+            },
+            {
+                "categoryHead": "Холодные напитки",
+                "categoryItem": [
+                    {
+                        "itemName": "Сок",
+                        "itemWeight": "200ml",
+                        "itemImageURL": "http://www.mcdonalds.ee/sites/default/files/styles/mcdo_large_477x366/public/produits/orange-juice.png?itok=qPfDE1jr"
+                    },
+                    {
+                        "itemName": "Сок",
+                        "itemWeight": "200ml",
+                        "itemImageURL": "http://www.mcdonalds.ee/sites/default/files/styles/mcdo_large_477x366/public/produits/orange-juice.png?itok=qPfDE1jr"
+                    },
+                    {
+                        "itemName": "Сок",
+                        "itemWeight": "200ml",
+                        "itemImageURL": "http://www.mcdonalds.ee/sites/default/files/styles/mcdo_large_477x366/public/produits/orange-juice.png?itok=qPfDE1jr"
+                    },
+                    {
+                        "itemName": "Сок",
+                        "itemWeight": "200ml",
+                        "itemImageURL": "http://www.mcdonalds.ee/sites/default/files/styles/mcdo_large_477x366/public/produits/orange-juice.png?itok=qPfDE1jr"
+                    },
+                    {
+                        "itemName": "Сок",
+                        "itemWeight": "200ml",
+                        "itemImageURL": "http://www.mcdonalds.ee/sites/default/files/styles/mcdo_large_477x366/public/produits/orange-juice.png?itok=qPfDE1jr"
+                    }
+                ]
+            },
+            {
+                "categoryHead": "Десерты",
+                "categoryItem": [
+                    {
+                        "itemName": "Tiramisu",
+                        "itemWeight": "200 g",
+                        "itemImageURL": "http://скушай-суши62.рф/wp-content/uploads/Tort-Tiramisu_Italiya.png"
+                    },
+                    {
+                        "itemName": "Tiramisu",
+                        "itemWeight": "200 g",
+                        "itemImageURL": "http://скушай-суши62.рф/wp-content/uploads/Tort-Tiramisu_Italiya.png"
+                    },
+                    {
+                        "itemName": "Tiramisu",
+                        "itemWeight": "200 g",
+                        "itemImageURL": "http://скушай-суши62.рф/wp-content/uploads/Tort-Tiramisu_Italiya.png"
+                    },
+                    {
+                        "itemName": "Tiramisu",
+                        "itemWeight": "200 g",
+                        "itemImageURL": "http://скушай-суши62.рф/wp-content/uploads/Tort-Tiramisu_Italiya.png"
+                    },
+                    {
+                        "itemName": "Tiramisu",
+                        "itemWeight": "200 g",
+                        "itemImageURL": "http://скушай-суши62.рф/wp-content/uploads/Tort-Tiramisu_Italiya.png"
+                    }
+                ]
+            }
+        ],
+        "avaliableTitle": "Будет доступно в ботах",
+        "dishBlockDescription": "Выбранные блюда будут доступны в боте.</br>Рекомендуем выбирать не более 5 блюд в каждой категории"
+    },
+    "inputs":  [
+        "16 цифр",
+        "ОКПО",
+        "+380"
+    ]
+}

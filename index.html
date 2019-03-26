@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Регистрация бота</title>
+    <link rel="stylesheet" href="styles/style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+    <section id="main-section" class="bot-registration screen-1">
+        <div class="container">
+            <div id="progress-line" class="progress-line">
+                <script id="progress-line-template" type="text/x-handlebars-template">
+                    {{#each statusIndicator}}
+                        <div class="indicator">
+                            <p class="indicator-name">{{this}}</p>
+                        </div>
+                    {{/each}}
+                </script>
+            </div>
+
+            <div id="screen1" class="screen-1-content">
+                <script id="steps-template" type="text/x-handlebars-template">
+                    {{#each steps}}
+                        <div class="step-block">
+                            <h2 class="title-text text-center">{{step}}</h2>
+
+                            <p class="middle-text text-center description">{{description}}</p>
+                            {{#if messenger}}
+                                <p class="small-text">{{smallText}}</p>
+
+                                <div class="msn-wrapper">
+                                    <div class="msn-block">
+                                        {{#each messenger}}
+                                            <div class="messenger">
+                                                <i class="fa fa-times msn-tab-closer"></i>
+
+                                                <p class="msn-name">{{this}}</p>
+                                            </div>
+                                        {{/each}}
+                                    </div>
+                                </div>
+                            {{else}}
+                                <form class="textarea-wrapper">
+                                    <textarea class="textarea form-style" placeholder="{{placeholder}}" rows="3"></textarea>
+                                </form>
+
+                                <div class="text-center">
+                                    <button class="button">{{buttonName}}</button>
+                                </div>
+                            {{/if}}
+                        </div>
+                    {{/each}}
+                </script>
+            </div>
+
+            <div id="screen2" class="screen-2-content">
+                <script id="categories-template" type="text/x-handlebars-template">
+                    {{#with categories}}
+                        <h2 class="title-text text-center screen-2-title">{{pageTitle}}</h2>
+
+                        <div class="screen-2-container">
+                            <div class="sidebar">
+                                <div>
+                                    <ul class="categories-list select-category">
+                                        <h2 class="title-text list-title">{{categoryTitle}}</h2>
+                                        {{#each categoriesName}}
+                                            <li class="category-item"> <!-- Add class 'active' for active state -->
+                                                <span class="middle-text category-item-text">{{categoryHead}}</span>
+                                            </li>
+                                        {{/each}}
+                                    </ul>
+                                </div>
+
+                                <div>   
+                                    <ul class="categories-list">
+                                        <h2 class="title-text list-title">{{avaliableTitle}}</h2>
+                                        {{#each categoriesName}}
+                                            <li class="category-item"> <!-- Add class 'active' for active state -->
+                                                <span class="middle-text category-item-text">{{categoryHead}}</span>
+                                                <ul class="dish-list">
+                                                    {{#each categoryItem}}
+                                                        <li class="dish-item">
+                                                            <p class="text-container">
+                                                                <span class="dish-item-text">{{itemName}}</span>
+                                                                <span class="dish-item-text">{{itemWeight}}</span>
+                                                            </p>
+                                                        </li>
+                                                    {{/each}}
+                                                </ul>
+                                            </li>
+                                        {{/each}}
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="dish-block">
+                                <p class="text-center dish-block-description">{{{dishBlockDescription}}}</p>
+                                <div class="card-wrapper">
+                                    {{#each categoriesName}}
+                                        {{#each categoryItem}}
+                                            <div class="dish-card">
+                                                <div class="image-wrapper text-center">
+                                                    <img src="{{itemImageURL}}" alt="{{itemName}}" class="dish-image">
+                                                </div>
+                                                
+                                                <form class="dish-name text-center">
+                                                    <label class="checkbox-label">
+                                                        <input type="checkbox" class="checkbox">
+                                                        <span class="checkbox-text">
+                                                            <span class="item-text">{{itemName}}</span>
+                                                            <span class="item-text">{{itemWeight}}</span>
+                                                        </span>
+                                                    </label>
+                                                </form>
+                                            </div>
+                                        {{/each}}
+                                    {{/each}}
+                                </div>
+                            </div>
+                        </div>
+                    {{/with}}
+                </script>
+            </div>
+
+            <div class="screen-3-content">
+                <h2 class="title-text text-center screen-3-title">Укажите Ваши реквизиты для получения оплаты в боте</h2>
+
+                <p class="text-center screen-3-text">Если у Вас не открыт счет - перейдите по ссылке для оформления</p>
+
+                <div class="buttons-block">
+                    <a href="javascript:void(0)" class="button account-button">Счет</a>
+
+                    <a href="javascript:void(0)" class="button card-button">Карта</a>
+                </div>
+
+                <form id = "inputs">
+                    <script id="inputs-template" type="text/x-handlebars-template"> 
+                        {{#each inputs}} 
+                        <div class="input-wrapper">
+                            <input type="text" placeholder="{{this}}" class="form-style input-item middle-text">
+                        </div>
+                        {{/each}}
+                    </script>
+                </form>
+            </div>
+
+            <div id="next-btn" class="btn-wrapper text-center">
+                <button class="button btn-next middle-text">
+                    <i class="fab fa-telegram-plane next-btn-icon"></i>    
+                    Далее
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+<!-- Scripts BEGIN --> 
+    <script src="scripts/handlebars-v4.1.1.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+<!-- Scripts END -->    
+</body>
+</html>
